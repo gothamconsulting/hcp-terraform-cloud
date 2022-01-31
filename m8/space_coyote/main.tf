@@ -20,7 +20,8 @@ provider "aws" {
 }
 
 module "networking" {
-  source        = "./networking"
+  source  = "app.terraform.io/markusinthecloud-de/networking/aws"
+  version = "1.0.0"
   region        = var.region
   prefix        = var.prefix
   environment   = var.environment
